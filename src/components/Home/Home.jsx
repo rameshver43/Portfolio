@@ -1,6 +1,5 @@
 import React from 'react';
 import Profile from './Profile/Profile';
-import Footer from './Footer/Footer';
 import './Home.css';
 import Navbar from './Navbar/Navbar';
 
@@ -9,7 +8,7 @@ export default function Home() {
         <div className='home-container'>
            <Navbar/>
            <Profile/>
-           <Footer/> 
+
         </div>
     );
 }

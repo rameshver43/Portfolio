@@ -10,16 +10,20 @@ export default function Profile() {
         <div className="profile-details">
           <div className="colz">
             <div className="colz-icon">
-              <a href="https://www.facebook.com/rameshver.tiwari" target="_blank">
+              <a
+                href="https://www.facebook.com/rameshver.tiwari"
+                target="_blank"
+              >
                 <i className="fa fa-facebook-square"></i>
               </a>
               <a href="https://github.com/rameshver43" target="_blank">
                 <i className="fa fa-github-square"></i>
               </a>
-              <a href="#">
-                <i className="fa fa-instagram"></i>
-              </a>
-              <a href="https://www.linkedin.com/in/rameshver-tilwari-4876b3152/" target="_blank">
+
+              <a
+                href="https://www.linkedin.com/in/rameshver-tilwari-4876b3152/"
+                target="_blank"
+              >
                 <i className="fa fa-linkedin-square"></i>
               </a>
               <a href="https://twitter.com/rameshver43" target="_blank">
@@ -61,13 +65,13 @@ export default function Profile() {
             </span>
           </div>
           <div className="profile-options">
-          <Link to="contact" spy={true} smooth={true}>
-          <button className="btn primary-btn">
-              {""}
-              Hire Me{" "}
-            </button>
-        </Link>
-           
+            <Link to="contact" spy={true} smooth={true}>
+              <button className="btn primary-btn">
+                {""}
+                Hire Me{" "}
+              </button>
+            </Link>
+
             <a href="Rameshver_Resume.pdf" download="Rameshver.pdf">
               <button className="btn highlighted-btn">Get Resume</button>
             </a>

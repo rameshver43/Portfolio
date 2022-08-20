@@ -3,9 +3,11 @@
   align-items: center;
   text-align: center;
   justify-content: center;
-  height: 10%;
   min-height: fit-content;
-  
+  padding-bottom: 50px;
+  padding-top: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .profile-parent {
   display: flex;
@@ -131,5 +133,9 @@
   }
   .profile-details {
     width: 90%;
+  }
+  .profile-container{
+    padding-bottom: 0px;
+  padding-top: 0px;
   }
 }

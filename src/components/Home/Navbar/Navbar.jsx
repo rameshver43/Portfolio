@@ -1,52 +1,48 @@
-import React from "react";
-import Toggle from "../../Toggle/Toggle";
+import React, { useState } from "react";
+import { ReactComponent as CloseMenu } from "../../../assets/Home/x.svg";
+import { ReactComponent as MenuIcon } from "../../../assets/Home/menu.svg";
+import { ReactComponent as Logo } from "../../../assets/Home/logo.svg";
 import "./Navbar.css";
 import { Link } from "react-scroll";
-const navbar = () => {
+const Navbar = () => {
+  const [click, setClick] = useState(false);
+  const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
   return (
-    <div className="n-wrapper" id="Navbar">
-      {/* left */}
-      <div className="n-left">
-        <div className="n-name">Rameshver</div>
-        <Toggle />
-      </div>
-      {/* right */}
-      <div className="n-right">
-        <div className="n-list">
-          <ul style={{ listStyleType: "none" }}>
-            <li>
-              <Link activeClass="active" to="Navbar" spy={true} smooth={true}>
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link to="services" spy={true} smooth={true}>
-                About
-              </Link>
-            </li>
-            <li>
-              <Link to="works" spy={true} smooth={true}>
-                Experience
-              </Link>
-            </li>
-            <li>
-              <Link to="portfolio" spy={true} smooth={true}>
-                Projects
-              </Link>
-            </li>
-            <li>
-              <Link to="testimonial" spy={true} smooth={true}>
-                Testimonial
-              </Link>
-            </li>
-          </ul>
+    <div className="header" id="Navbar">
+      <div className="logo-nav">
+        <div className="logo-container">
+          <Link to="Navbar" spy={true} smooth={true}>
+            <Logo className="logo" />
+          </Link>
         </div>
-        <Link to="contact" spy={true} smooth={true}>
-        <button className="button n-button">Contact</button>
-        </Link>
+        <ul className={click ? "nav-options active" : "nav-options"}>
+          <li className="option" onClick={closeMobileMenu}>
+            <Link   to="about" spy={true} smooth={true}><div className="about">ABOUT</div></Link>
+          </li>
+          <li className="option" onClick={closeMobileMenu}>
+          <Link   to="project" spy={true} smooth={true}><div className="about">PROJECT</div></Link>
+          </li>
+          <li className="option mobile-option" onClick={closeMobileMenu}>
+          <Link   to="contact" spy={true} smooth={true}><div className="about">CONTACT</div></Link>
+          </li>
+        </ul>
+      </div>
+      <ul className="signin-up">
+        
+        <li onClick={closeMobileMenu}>
+        <Link   to="contact" spy={true} smooth={true}><div className="about">CONTACT</div></Link>
+        </li>
+      </ul>
+      <div className="mobile-menu" onClick={handleClick}>
+        {click ? (
+          <CloseMenu className="menu-icon" />
+        ) : (
+          <MenuIcon className="menu-icon" />
+        )}
       </div>
     </div>
   );
 };
 
-export default navbar;
+export default Navbar;
