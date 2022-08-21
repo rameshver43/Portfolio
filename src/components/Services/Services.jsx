@@ -52,6 +52,7 @@ const Services = () => {
         alignItems="center"
         className={classes.about}
       >
+        <Typography variant="body2" color="textSecondary" component="p">
         I am a passionate coder with a creative mind. I love problem-solving and
         coming up with innovative solutions to problems. My aim is to make the
         world better in every way I can, by the use of technology and
@@ -80,6 +81,7 @@ const Services = () => {
         Importance of Independence Day Essay Independence day is a positive
         historical event for the country since we were free from British rule on
         this day.
+        </Typography>
       </Grid>
       <Grid>
         <button onClick={onButtonClick} className="button">

@@ -2,7 +2,7 @@ import React from "react";
 import "./Testimonial.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-
+import Paper from "@material-ui/core/Paper";
 import { Pagination } from "swiper";
 import "swiper/css/pagination";
 import profilePic1 from "../../img/profile1.jpg";
@@ -35,7 +35,7 @@ const Testimonial = () => {
   ];
 
   return (
-    <div className="t-wrapper" id="testimonial">
+    <Paper className="t-wrapper" id="testimonial">
       <div className="t-heading">
         <span>Clients always get </span>
         <span>Exceptional Work </span>
@@ -61,7 +61,7 @@ const Testimonial = () => {
           );
         })}
       </Swiper>
-    </div>
+    </Paper>
   );
 };
 
