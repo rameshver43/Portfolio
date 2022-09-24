@@ -1,9 +1,15 @@
 .Intro {
-  display: flex;
-  height: 77vh;
-  margin-top: 6rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  flexGrow: 1;
+  overflow: "hidden";
+  marginLeft: 10;
+  marginRight:10;
 }
-
+.heading{
+  text-align: center;
+  color: black;
+}
 /* left side styling */
 .i-left {
   display: flex;
@@ -11,25 +17,17 @@
   flex: 1;
   flex-direction: column;
   gap: 2rem;
+  margin-left: 10px;
 }
 .i-name {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
 }
+
 .i-name > :nth-child(1) {
-  color: var(--black);
-  font-weight: bold;
-  font-size: 3rem;
-}
-.i-name > :nth-child(2) {
-  color: var(--orange);
-  font-weight: bold;
-  font-size: 3rem;
-}
-.i-name > :nth-child(3) {
   font-weight: 100;
-  font-size: 14px;
+  font-size: 18px;
   color: var(--gray);
   margin-top: 10px;
 }

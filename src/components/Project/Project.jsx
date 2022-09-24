@@ -34,6 +34,16 @@ export default function Project(props) {
       Project_Details:
         "An Android App that takes the pictures of ingredients using the mobile camera and gives Automatic suggestions for the recipe.",
     },
+    {
+      Project_Name: "Amazon Website Clone",
+      Project_Details:
+        "Amazon Clone with fully functionality using ReactJs, firebase and nodeJs.",
+    },
+    {
+      Project_Name: "Portfolio Website",
+      Project_Details:
+        "A full fuctionality of portfolio website using ReactJs, firebase and nodeJs.",
+    },
   ];
 
   return (

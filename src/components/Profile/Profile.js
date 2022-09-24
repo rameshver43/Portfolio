@@ -2,7 +2,6 @@ import React from "react";
 import Typical from "react-typical";
 import './Profile.css';
 import { Link } from "react-scroll";
-
 export default function Profile() {
   return (
     <div className="profile-container">
