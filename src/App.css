@@ -31,7 +31,8 @@
 .App {
   overflow: hidden;
   color: var(--black);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:"Amazon Ember",Arial,sans-serif;
+  background-color: #EEEDE7;
 }
 
 .button {

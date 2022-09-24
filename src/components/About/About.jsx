@@ -2,13 +2,13 @@ import React, { useContext } from "react";
 import "./About.css";
 import { Link } from "react-scroll";
 import Divider from "@material-ui/core/Divider";
+import Paper from "@material-ui/core/Paper";
 const Intro = () => {
   return (
-		<div className="Intro" id="about">
-		<h1 className="heading">About Me</h1>
+		<Paper className="about" id="about">
+			<div className="aboutheading">About Me</div>
 			<div className="i-left">
 				<div className="i-name">
-
 					<span>
 						I am Rameshver. I am from Meerut. I have completed B.Tech from IIT
 						Jodhpur with the department of Computer Science & Engineering. I
@@ -29,7 +29,7 @@ const Intro = () => {
 			</div>
 			{/* right image side */}
 			<div className="i-right"></div>
-		</div>
+		</Paper>
 	);
 };
 

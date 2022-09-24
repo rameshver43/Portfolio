@@ -3,6 +3,7 @@ import { alpha, makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
+import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from "@material-ui/icons/Search";
 import MoreIcon from "@material-ui/icons/MoreVert";
 import "./Navbar.css";
@@ -16,14 +17,7 @@ import ListItemText from "@material-ui/core/ListItemText";
 import { Link } from "react-scroll";
 const useStyles = makeStyles((theme) => ({
   list: {
-    width: 400,
-  },
-  fullList: {
-    width: "auto",
-  },
-
-  menuButton: {
-    marginRight: theme.spacing(2),
+    width: 200,
   },
 
   sectionDesktop: {
@@ -44,6 +38,21 @@ const useStyles = makeStyles((theme) => ({
   appbar: {
     backgroundColor: "black",
   },
+  rightoption:{
+    display: "flex",
+    marginBottom: 0,
+    marginLeft: "auto",
+    padding: "0 5px",
+    [theme.breakpoints.down("md")]: {
+        display: "none",
+      },
+},
+leftoption:{
+    [theme.breakpoints.down("md")]: {
+        display: "none",
+      },
+}
+
 }));
 
 export default function Header() {
@@ -64,7 +73,11 @@ export default function Header() {
   const [state, setState] = React.useState({
     left: false,
   });
-
+const hideDrawer = ()=>{
+    setState({
+        left: false,
+      });
+}
   const toggleDrawer = (anchor, open) => (event) => {
     if (
       event &&
@@ -78,29 +91,38 @@ export default function Header() {
   };
 
   const list = (anchor) => (
-    <div
-      className={clsx(classes.list, {
-        [classes.fullList]: anchor === "top" || anchor === "bottom",
-      })}
-      role="presentation"
-      onClick={toggleDrawer(anchor, false)}
-      onKeyDown={toggleDrawer(anchor, false)}
-    >
-      <Divider />
-      <List>
-        <div>
-          <ListItem button className="header_option">
-            <ListItemText
-              className="header_optionLineOne"
-              primary={"Returns & Orders"}
-            />
-          </ListItem>
-        </div>
-
-       
-      </List>
-    </div>
-  );
+		<div
+			className={classes.list}
+			role="presentation"
+			onClick={toggleDrawer(anchor, false)}
+			onKeyDown={toggleDrawer(anchor, false)}>
+			<Divider />
+			<div>
+				<ul className="list">
+					<li className="home_name">
+						<Link onClick={hideDrawer} to="Navbar" spy={true} smooth={true}>
+							<Typography className="option1">Rameshver</Typography>
+						</Link>
+					</li>
+					<li className="home_name1">
+						<Link onClick={hideDrawer} to="about" spy={true} smooth={true}>
+							<Typography className="option">About</Typography>
+						</Link>
+					</li>
+					<li className="home_name1">
+						<Link onClick={hideDrawer} to="project" spy={true} smooth={true}>
+							<Typography className="option">Projects</Typography>
+						</Link>
+					</li>
+					<li className="home_name1">
+						<Link onClick={hideDrawer} to="contact" spy={true} smooth={true}>
+							<Typography className="option">Contact</Typography>
+						</Link>
+					</li>
+				</ul>
+			</div>
+		</div>
+	);
 
 
   const mobileMenuId = "primary-search-account-menu-mobile";
@@ -125,12 +147,12 @@ export default function Header() {
 		<div className="header" id="Navbar">
 			<AppBar className={classes.appbar}>
 				<Toolbar>
-					<div className="leftoption">
+					<div className={classes.leftoption}>
 						<Link to="Navbar" spy={true} smooth={true}>
 							<Typography className="option">Rameshver</Typography>
 						</Link>
 					</div>
-					<div className="rightoption">
+					<div className={classes.rightoption}>
 						<div className="rightoptionmore">
 							<Link to="about" spy={true} smooth={true}>
 								<Typography className="option">About</Typography>
@@ -144,14 +166,13 @@ export default function Header() {
 						</div>
 					</div>
 					<div className={classes.sectionMobile}>
-						<IconButton
+						<MenuIcon
+							className="menu"
 							aria-label="show more"
 							aria-controls={mobileMenuId}
 							aria-haspopup="true"
 							onClick={handleMobileMenuOpen}
-							color="inherit">
-							<MoreIcon />
-						</IconButton>
+							color="inherit"></MenuIcon>
 					</div>
 				</Toolbar>
 			</AppBar>

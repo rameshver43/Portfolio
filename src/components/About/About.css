@@ -1,14 +1,21 @@
-.Intro {
+.about {
   margin-top: 1rem;
-  margin-bottom: 3rem;
-  flexGrow: 1;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  flex-grow: 1;
   overflow: "hidden";
-  marginLeft: 10;
-  marginRight:10;
+  padding-bottom: 2rem;
 }
-.heading{
+.aboutheading{
   text-align: center;
-  color: black;
+  color: white;
+  background-color: black;
+  height:40px;
+  align-items: center;
+  margin-left: 40%;
+  margin-right: 40%;
+  font-size: 24px;
 }
 /* left side styling */
 .i-left {
@@ -92,12 +99,16 @@
 }
 
 @media screen and (max-width: 480px) {
-  .Intro {
+  .about {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    flex-grow: 1;
+    overflow: "hidden";
+    padding-bottom: 2rem;
     flex-direction: column;
-    gap: 7rem;
-    height: 64rem;
   }
-
   .i-right {
     transform: scale(0.8);
     left: -3rem;

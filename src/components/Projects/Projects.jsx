@@ -3,28 +3,12 @@ import Paper from "@material-ui/core/Paper";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import Project from "../Project/Project";
+import "./Projects.css";
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-    overflow: "hidden",
-    padding: theme.spacing(0, 3),
-    marginLeft: 10,
-    marginRight:10
-  },
-  h:{
-    textAlign:'center',
-  },
-  paper: {},
-}));
-
-
-export default function Projects() {
-  const classes = useStyles();
- 
+export default function Projects() { 
   return (
-    <Paper className={classes.root} id ="project">
-      <h1 className={classes.h}>Projects</h1>
+    <Paper className="projects" id ="project">
+     <div className="aboutheading">Projects</div>
         <Grid
         container
         direction="row"

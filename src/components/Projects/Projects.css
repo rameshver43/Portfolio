@@ -1,0 +1,19 @@
+.aboutheading{
+    text-align: center;
+    color: white;
+    background-color: black;
+    height:40px;
+    align-items: center;
+    margin-left: 40%;
+    margin-right: 40%;
+    font-size: 24px;
+  }
+  .projects{
+ margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  flex-grow: 1;
+  overflow: "hidden";
+  padding-bottom: 2rem;
+  }

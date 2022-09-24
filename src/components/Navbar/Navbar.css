@@ -8,14 +8,6 @@
     z-index: 100;
 }
 
-.header_logo {
-    width: 100px;
-    object-fit: contain;
-    margin: 0 20px;
-    margin-top: 10px;
-    padding: 5px;
-}
-
 .header_logo :hover {}
 
 
@@ -61,6 +53,7 @@
 
 .header_optionLineOne {
     font-size: 10px;
+    color:black;
 }
 
 .header_optionLineTwo {
@@ -84,6 +77,36 @@
 .option:hover{
     color:orange;
 }
+.menu{
+    cursor: pointer;
+}
+.menu:hover{
+    color: orangered;
+}
+.option1{
+    cursor: pointer;
+    color: white;
+}
+.option1:hover{
+    color:orange;
+}
+.list{
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+    align-items: center;
+
+}
+.home_name{
+    padding-top: 0.5rem;
+    background-color: #232f3e;
+    height: 50px;
+    align-items: center;
+}
+.home_name1{
+    height: 50px;
+    align-items: center;
+}
 .rightoptionmore{
     grid-gap: 50px;
     display: grid;
@@ -91,13 +114,6 @@
     list-style-type: none;
     margin-bottom: 0;
     padding-left: 25px;
-}
-.rightoption{
-    display: flex;
-    list-style-type: none;
-    margin-bottom: 0;
-    margin-left: auto;
-    padding: 0 5px;
 }
 
 .header_basketCount {
