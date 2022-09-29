@@ -32,7 +32,7 @@
 }
    
 .row{
-    display: flex;
+    display: contents;
     align-items: center;
     gap: 20px;
 }
@@ -55,6 +55,8 @@
 .footerlink:hover {
   color: #DDD;
       transition: 200ms ease-in;
+      text-decoration: underline;
+      text-decoration-color: #DDD;
   }
    
 .footerheading{

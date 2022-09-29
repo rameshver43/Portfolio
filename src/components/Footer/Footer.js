@@ -1,6 +1,5 @@
 import React from 'react';
 import "./Footer.css";
-import Paper from "@material-ui/core/Paper";
 
 export default function Footer() {
 

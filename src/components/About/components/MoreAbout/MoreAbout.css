@@ -1,0 +1,20 @@
+.tabHeading{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    text-rendering: optimizeLegibility;
+    margin-bottom: 0!important;
+    text-rendering: optimizeLegibility;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: "Amazon Ember",Arial,sans-serif;
+    color: #0F1111;
+}
+.tabBody{
+    font-weight: 100;
+    font-size: 18px;
+    color: var(--gray);
+}

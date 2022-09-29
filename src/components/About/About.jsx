@@ -1,8 +1,8 @@
-import React, { useContext } from "react";
+import React from "react";
 import "./About.css";
 import { Link } from "react-scroll";
-import Divider from "@material-ui/core/Divider";
 import Paper from "@material-ui/core/Paper";
+import  MoreAbout from "./components/MoreAbout/MoreAbout";
 const Intro = () => {
   return (
 		<Paper className="about" id="about">
@@ -23,9 +23,10 @@ const Intro = () => {
 						to hear from you any suggestion or any guidence.
 					</span>
 				</div>
-				<Link to="contact" smooth={true} spy={true}>
+				{/*<Link to="contact" smooth={true} spy={true}>
 					<button className="button i-button">Hire me</button>
-				</Link>
+				</Link>*/}
+  <MoreAbout/>
 			</div>
 			{/* right image side */}
 			<div className="i-right"></div>
