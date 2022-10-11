@@ -8,6 +8,7 @@ import SwipeableDrawer from "@material-ui/core/SwipeableDrawer";
 import Typography from "@material-ui/core/Typography";
 import Divider from "@material-ui/core/Divider";
 import { Link } from "react-scroll";
+import Clones from "../Clones/Clones";
 const useStyles = makeStyles((theme) => ({
   list: {
     width: 200,
@@ -93,22 +94,22 @@ const hideDrawer = ()=>{
 			<div>
 				<ul className="list">
 					<li className="home_name">
-						<Link onClick={hideDrawer} to="Navbar" spy={true} smooth={true}>
+						<Link onClick={hideDrawer} to="Navbar" spy={true} duration={0} smooth={true}>
 							<Typography className="option1">Rameshver</Typography>
 						</Link>
 					</li>
 					<li className="home_name1">
-						<Link onClick={hideDrawer} to="about" spy={true} smooth={true}>
+						<Link onClick={hideDrawer} to="about" spy={true} duration={0} smooth={true}>
 							<Typography className="option">About</Typography>
 						</Link>
 					</li>
 					<li className="home_name1">
-						<Link onClick={hideDrawer} to="project" spy={true} smooth={true}>
+						<Link onClick={hideDrawer} to="project" spy={true} duration={0} smooth={true}>
 							<Typography className="option">Projects</Typography>
 						</Link>
 					</li>
 					<li className="home_name1">
-						<Link onClick={hideDrawer} to="contact" spy={true} smooth={true}>
+						<Link onClick={hideDrawer} to="contact" spy={true} duration={0} smooth={true}>
 							<Typography className="option">Contact</Typography>
 						</Link>
 					</li>
@@ -147,6 +148,7 @@ const hideDrawer = ()=>{
 					</div>
 					<div className={classes.rightoption}>
 						<div className="rightoptionmore">
+						
 							<Link to="about" spy={true} smooth={true}>
 								<Typography className="option">About</Typography>
 							</Link>

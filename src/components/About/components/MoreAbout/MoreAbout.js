@@ -51,7 +51,7 @@ const useStyles = makeStyles((theme) => ({
   },
   tabs: {
     borderRight: `1px solid ${theme.palette.divider}`,
-  
+    textAlign:'left',
     [theme.breakpoints.down('sm')]:{
         width:"50%",
     }
@@ -61,6 +61,9 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down('sm')]:{
         width:"50%",
     }
+  },
+  tab:{
+    textAlign:"left"
   }
 }));
 const Educations = [
@@ -104,13 +107,6 @@ const Coursework = [
 	"Security and its Application",
 ];
 
-const Links =[
-    {type:"Github",value:""},
-    {type:"Codechef",value:"https://www.codechef.com/"},
-    {type:"LeetCode",value:"https://leetcode.com/"},
-    {type:"HackerRank",value:"https://www.hackerrank.com/"},
-    {type:"HackerEarth",value:"https://www.hackerearth.com/"},
-]
 const Achievements = [
 	{
 		type: "Competitive Coding Profile",
@@ -148,16 +144,15 @@ const Extracurricular = [
 				value={value}
 				onChange={handleChange}
 				className={classes.tabs}>
-				<Tab label="Education" {...a11yProps(0)} />
-				<Tab label="Skills" {...a11yProps(1)} />
-				<Tab label="Coursework" {...a11yProps(2)} />
-				<Tab label="Links" {...a11yProps(3)} />
-				<Tab label="Achievements" {...a11yProps(4)} />
-				<Tab label="EXTRACURRICULAR" {...a11yProps(5)} />
+				<Tab className={classes.tab} label="Education" {...a11yProps(0)} />
+				<Tab className='tab' label="Skills" {...a11yProps(1)} />
+				<Tab className='tab' label="Coursework" {...a11yProps(2)} />
+				<Tab className='tab' label="Achievements" {...a11yProps(3)} />
+				<Tab className='tab' label="EXTRACURRICULAR" {...a11yProps(4)} />
 			</Tabs>
 			<TabPanel value={value} index={0} className={classes.tabvalue}>
 				{Educations.map((item) => (
-					<div>
+					<div className='bodyData'>
 						<Typography className='tabHeading'>{item.type}</Typography>
 						<Typography className='tabBody'>{item.school}</Typography>
 						<Typography className='tabBody'>{item.marks}</Typography>
@@ -166,7 +161,7 @@ const Extracurricular = [
 			</TabPanel>
 			<TabPanel value={value} index={1} className={classes.tabvalue}>
 				{Skills.map((item) => (
-					<div>
+					<div className='bodyData'>
 						<Typography className='tabHeading'>{item.type}</Typography>
 						<Typography className='tabBody'>{item.value}</Typography>
 					</div>
@@ -180,16 +175,8 @@ const Extracurricular = [
 				))}
 			</TabPanel>
 			<TabPanel value={value} index={3} className={classes.tabvalue}>
-				{Links.map((item) => (
-					<div>
-						<Typography className='tabHeading'>{item.type}</Typography>
-						<Typography className='tabBody'>{item.value}</Typography>
-					</div>
-				))}
-			</TabPanel>
-			<TabPanel value={value} index={4} className={classes.tabvalue}>
 				{Achievements.map((item) => (
-					<div>
+					<div className='bodyData'>
 						<Typography className='tabHeading'>{item.type}</Typography>
 						{item.value.map((item1) => (
 							<Typography className='tabBody'>{item1}</Typography>
@@ -197,7 +184,7 @@ const Extracurricular = [
 					</div>
 				))}
 			</TabPanel>
-			<TabPanel value={value} index={5} className={classes.tabvalue}>
+			<TabPanel value={value} index={4} className={classes.tabvalue}>
 				{Extracurricular.map((item) => (
 					<div>
 						<Typography className='tabBody'>{item}</Typography>

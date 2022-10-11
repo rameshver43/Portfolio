@@ -88,6 +88,9 @@
   .profile-picture {
     margin: 0 0px 0 80px;
   }
+  .profile-container {
+    padding-top: 0px;
+  }
   .profile-details-name {
     font-size: 20px;
   }
@@ -114,7 +117,6 @@
   }
   .profile-parent {
     flex-direction: column-reverse;
-    margin: 40px 0 0 0;
   }
   .profile-options {
     display: flex;

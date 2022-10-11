@@ -2,7 +2,7 @@
     height: 60px;
     display: flex;
     align-items: center;
-    background-color: black;
+    background-color: #1976d2;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -108,12 +108,11 @@
     align-items: center;
 }
 .rightoptionmore{
-    grid-gap: 50px;
-    display: grid;
+    grid-gap: 40px;
+    display: flex;
     grid-template-columns: repeat(3,auto);
     list-style-type: none;
     margin-bottom: 0;
-    padding-left: 25px;
 }
 
 .header_basketCount {

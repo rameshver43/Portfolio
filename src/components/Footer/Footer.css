@@ -24,13 +24,24 @@
   width: 10%;
 }
 .footercolumn{
-  display: table-cell;
+  display: table-caption;
     padding: 0 10px;
     line-height: 120%;
     vertical-align: top;
     font-family: "Amazon Ember",Arial,sans-serif;
 }
-   
+@media screen and (max-width: 1000px) 
+{
+  .footercolumn{
+    display: table-caption;
+      padding: 0 10px;
+      line-height: 120%;
+      vertical-align: top;
+      font-family: "Amazon Ember",Arial,sans-serif;
+  }
+    
+}
+
 .row{
     display: contents;
     align-items: center;
