@@ -27,17 +27,17 @@ const useStyles = makeStyles({
 const Educations = [
 	{
 		type: "UNDERGRADUATE",
-		school: "CSE | IIT Jodhpur | 2021",
-		marks: "CGPA: 6.91/10",
+		school: "CSE | IIT Jodhpur | 2021 | ",
+		marks: "CGPA: 6.75/10",
 	},
 	{
 		type: "INTERMEDIATE",
-		school: "JNV Rangareddy | CBSE | 2017",
+		school: "JNV Rangareddy | CBSE | 2017 | ",
 		marks: "Percentage: 87.4%",
 	},
 	{
 		type: "HIGH SCHOOL",
-		school: "JNV Meerut | CBSE | 2015",
+		school: "JNV Meerut | CBSE | 2015 | ",
 		marks: "CGPA: 9.6/10",
 	},
 ];
