@@ -114,7 +114,13 @@
     list-style-type: none;
     margin-bottom: 0;
 }
-
+.active{
+    all: unset;
+}
+.appbar {
+    all:unset;
+    background-color: red;
+  }
 .header_basketCount {
     margin-left: 10px;
     margin-right: 10px;

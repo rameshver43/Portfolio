@@ -1,10 +1,11 @@
-import React from 'react';
+import React from "react";
 import "./Footer.css";
-
+import FacebookIcon from "@material-ui/icons/Facebook";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import TwitterIcon from "@material-ui/icons/Twitter";
 export default function Footer() {
-
-
-  return (
+	return (
 		<div className="box">
 			<div className="container">
 				<div className="row">
@@ -14,38 +15,26 @@ export default function Footer() {
 							<li className="footerlist">
 								<a
 									className="footerlink"
-									href="https://www.codechef.com/"
-									target="_blank">
+									href="https://www.codechef.com/users/rameshver43"
+									target="_blank"
+									rel="noreferrer">
 									Codechef
 								</a>
 							</li>
+							
 							<li className="footerlist">
 								<a
 									className="footerlink"
-									href="https://leetcode.com/"
-									target="_blank">
-									LeetCode
-								</a>
-							</li>
-							<li className="footerlist">
-								<a
-									className="footerlink"
-									href="https://www.hackerrank.com/"
-									target="_blank">
+									href="https://www.hackerrank.com/rameshver_1?hr_r=1"
+									target="_blank"
+									rel="noreferrer">
 									HackerRank
 								</a>
 							</li>
-							<li className="footerlist">
-								<a
-									className="footerlink"
-									href="https://www.hackerearth.com/"
-									target="_blank">
-									HackerEarth
-								</a>
-							</li>
+						
 						</ul>
 					</div>
-          <div className="footerspace"></div>
+					<div className="footerspace"></div>
 					<div className="footercolumn">
 						<div className="footerheading">Coding Platform</div>
 						<ul className="footerul">
@@ -53,7 +42,8 @@ export default function Footer() {
 								<a
 									className="footerlink"
 									href="https://www.codechef.com/"
-									target="_blank">
+									target="_blank"
+									rel="noreferrer">
 									Codechef
 								</a>
 							</li>
@@ -61,7 +51,8 @@ export default function Footer() {
 								<a
 									className="footerlink"
 									href="https://leetcode.com/"
-									target="_blank">
+									target="_blank"
+									rel="noreferrer">
 									LeetCode
 								</a>
 							</li>
@@ -69,7 +60,8 @@ export default function Footer() {
 								<a
 									className="footerlink"
 									href="https://www.hackerrank.com/"
-									target="_blank">
+									target="_blank"
+									rel="noreferrer">
 									HackerRank
 								</a>
 							</li>
@@ -77,51 +69,14 @@ export default function Footer() {
 								<a
 									className="footerlink"
 									href="https://www.hackerearth.com/"
-									target="_blank">
+									target="_blank"
+									rel="noreferrer">
 									HackerEarth
 								</a>
 							</li>
 						</ul>
 					</div>
-          <div className="footerspace"></div>
-					<div className="footercolumn">
-						<div className="footerheading">Coding Platform</div>
-						<ul className="footerul">
-							<li className="footerlist">
-								<a
-									className="footerlink"
-									href="https://www.codechef.com/"
-									target="_blank">
-									Codechef
-								</a>
-							</li>
-							<li className="footerlist">
-								<a
-									className="footerlink"
-									href="https://leetcode.com/"
-									target="_blank">
-									LeetCode
-								</a>
-							</li>
-							<li className="footerlist">
-								<a
-									className="footerlink"
-									href="https://www.hackerrank.com/"
-									target="_blank">
-									HackerRank
-								</a>
-							</li>
-							<li className="footerlist">
-								<a
-									className="footerlink"
-									href="https://www.hackerearth.com/"
-									target="_blank">
-									HackerEarth
-								</a>
-							</li>
-						</ul>
-					</div>
-          <div className="footerspace"></div>
+					<div className="footerspace"></div>
 					<div className="footercolumn">
 						<div className="footerheading">Social Media</div>
 						<ul className="footerul">
@@ -129,32 +84,37 @@ export default function Footer() {
 								<a
 									className="footerlink"
 									href="https://www.facebook.com/rameshver.tiwari"
-									target="_blank">
-									<i className="fa fa-facebook-square"></i> Facebook
+									target="_blank"
+									rel="noreferrer">
+									<FacebookIcon /> Facebook
 								</a>
 							</li>
 							<li className="footerlist">
 								<a
 									className="footerlink"
 									href="https://github.com/rameshver43"
-									target="_blank">
-									<i className="fa fa-github-square"></i> Github
+									target="_blank"
+									rel="noreferrer">
+									<GitHubIcon /> Github
 								</a>
 							</li>
 							<li className="footerlist">
 								<a
 									className="footerlink"
 									href="https://www.linkedin.com/in/rameshver-tilwari-4876b3152/"
-									target="_blank">
-									<i className="fa fa-linkedin-square"></i> Linkedin
+									target="_blank"
+									rel="noreferrer">
+									<LinkedInIcon />
+									Linkedin
 								</a>
 							</li>
 							<li className="footerlist">
 								<a
 									className="footerlink"
 									href="https://twitter.com/rameshver43"
-									target="_blank">
-									<i className="fa fa-twitter"></i> Twitter
+									target="_blank"
+									rel="noreferrer">
+									<TwitterIcon /> Twitter
 								</a>
 							</li>
 						</ul>

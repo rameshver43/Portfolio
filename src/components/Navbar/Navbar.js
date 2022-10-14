@@ -8,12 +8,15 @@ import SwipeableDrawer from "@material-ui/core/SwipeableDrawer";
 import Typography from "@material-ui/core/Typography";
 import Divider from "@material-ui/core/Divider";
 import { Link } from "react-scroll";
-import Clones from "../Clones/Clones";
 const useStyles = makeStyles((theme) => ({
   list: {
     width: 200,
   },
-
+ 
+  appbar:{
+    backgroundColor:"black",
+    height:60,
+  },
   sectionDesktop: {
     display: "none",
     [theme.breakpoints.up("md")]: {
@@ -28,9 +31,6 @@ const useStyles = makeStyles((theme) => ({
   },
   colorDefault: {
     backgroundColor: "red",
-  },
-  appbar: {
-    backgroundColor: "black",
   },
   rightoption:{
     display: "flex",
@@ -51,15 +51,7 @@ leftoption:{
 
 export default function Header() {
   const classes = useStyles();
-
-  const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
-
-  const handleMobileMenuClose = () => {
-    setMobileMoreAnchorEl(null);
-  };
-
   const handleMobileMenuOpen = (event) => {
-    setMobileMoreAnchorEl(event.currentTarget);
     setState({
       left: true,
     });
@@ -94,23 +86,23 @@ const hideDrawer = ()=>{
 			<div>
 				<ul className="list">
 					<li className="home_name">
-						<Link onClick={hideDrawer} to="Navbar" spy={true} duration={0} smooth={true}>
-							<Typography className="option1">Rameshver</Typography>
+						<Link activeClass="active" onClick={hideDrawer} to="Navbar" spy={true} duration={0} smooth={true}>
+							<Typography component={'span'} className="option1">HOME</Typography>
 						</Link>
 					</li>
 					<li className="home_name1">
-						<Link onClick={hideDrawer} to="about" spy={true} duration={0} smooth={true}>
-							<Typography className="option">About</Typography>
+						<Link activeClass="active" onClick={hideDrawer} to="about" spy={true} duration={0} smooth={true}>
+							<Typography component={'span'} className="option">ABOUT</Typography>
 						</Link>
 					</li>
 					<li className="home_name1">
-						<Link onClick={hideDrawer} to="project" spy={true} duration={0} smooth={true}>
-							<Typography className="option">Projects</Typography>
+						<Link activeClass="active" onClick={hideDrawer} to="project" spy={true} duration={0} smooth={true}>
+							<Typography component={'span'} className="option">PROJECTS</Typography>
 						</Link>
 					</li>
 					<li className="home_name1">
-						<Link onClick={hideDrawer} to="contact" spy={true} duration={0} smooth={true}>
-							<Typography className="option">Contact</Typography>
+						<Link activeClass="active" onClick={hideDrawer} to="contact" spy={true} duration={0} smooth={true}>
+							<Typography component={'span'} className="option">CONTACT US</Typography>
 						</Link>
 					</li>
 				</ul>
@@ -143,20 +135,20 @@ const hideDrawer = ()=>{
 				<Toolbar>
 					<div className={classes.leftoption}>
 						<Link to="Navbar" spy={true} smooth={true}>
-							<Typography className="option">Rameshver</Typography>
+							<Typography component={'span'} className="option">HOME</Typography>
 						</Link>
 					</div>
 					<div className={classes.rightoption}>
 						<div className="rightoptionmore">
 						
 							<Link to="about" spy={true} smooth={true}>
-								<Typography className="option">About</Typography>
+								<Typography component={'span'} className="option">ABOUT</Typography>
 							</Link>
 							<Link to="project" spy={true} smooth={true}>
-								<Typography className="option">Projects</Typography>
+								<Typography component={'span'} className="option">PROJECTS</Typography>
 							</Link>
 							<Link to="contact" spy={true} smooth={true}>
-								<Typography className="option">Contact</Typography>
+								<Typography component={'span'} className="option">CONTACT US</Typography>
 							</Link>
 						</div>
 					</div>

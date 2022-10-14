@@ -1,8 +1,7 @@
 import React from "react";
 import "./About.css";
-import { Link } from "react-scroll";
 import Paper from "@material-ui/core/Paper";
-import MoreAbout from "./components/MoreAbout/MoreAbout";
+import AboutMe from "./components/AboutMe/AboutMe";
 const Intro = () => {
 	return (
 		<Paper className="about" id="about">
@@ -21,14 +20,8 @@ const Intro = () => {
 					website as fullstack developer. I am looking forward to hear from you
 					any suggestion or any guidence.
 				</div>
-				{/*<Link to="contact" smooth={true} spy={true}>
-					<button className="button i-button">Hire me</button>
-				</Link>*/}
-				<Paper>
-					<MoreAbout />
-				</Paper>
+					<AboutMe />
 			</div>
-			{/* right image side */}
 			<div className="i-right"></div>
 		</Paper>
 	);

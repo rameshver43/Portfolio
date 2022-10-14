@@ -24,22 +24,11 @@
   width: 10%;
 }
 .footercolumn{
-  display: table-caption;
+  display: block;
     padding: 0 10px;
     line-height: 120%;
     vertical-align: top;
     font-family: "Amazon Ember",Arial,sans-serif;
-}
-@media screen and (max-width: 1000px) 
-{
-  .footercolumn{
-    display: table-caption;
-      padding: 0 10px;
-      line-height: 120%;
-      vertical-align: top;
-      font-family: "Amazon Ember",Arial,sans-serif;
-  }
-    
 }
 
 .row{
@@ -50,8 +39,7 @@
    
   @media screen and (max-width: 1000px) {
     .row{
-    grid-template-columns: repeat(auto-fill, 
-                           minmax(200px, 1fr));
+  display: initial;
     }
   }
    
@@ -59,7 +47,6 @@
   margin-bottom: 20px;
   font-size: 16px;
   text-decoration: none;
-
   color: #DDD;
 }
 
