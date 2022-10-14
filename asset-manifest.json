@@ -1,25 +1,22 @@
 {
   "files": {
-    "main.css": "/rameshver/static/css/main.8e783725.css",
-    "main.js": "/rameshver/static/js/main.f7be692d.js",
-    "static/media/profilephoto.jpeg": "/rameshver/static/media/profilephoto.74779a20057b462a29fc.jpeg",
-    "static/media/Poppins-Thin.ttf": "/rameshver/static/media/Poppins-Thin.a61eaf4c2e4d44d6db6a.ttf",
-    "static/media/Poppins-Light.ttf": "/rameshver/static/media/Poppins-Light.f41b63c0bb0963ace821.ttf",
-    "static/media/Poppins-Regular.ttf": "/rameshver/static/media/Poppins-Regular.8081832fc5cfbf634aa6.ttf",
-    "static/media/Poppins-Medium.ttf": "/rameshver/static/media/Poppins-Medium.9e1bb626874ed49aa343.ttf",
-    "static/media/Poppins-SemiBold.ttf": "/rameshver/static/media/Poppins-SemiBold.cce5625b56ec678e4202.ttf",
-    "static/media/Poppins-Bold.ttf": "/rameshver/static/media/Poppins-Bold.404e299be26d78e66794.ttf",
-    "static/media/Poppins-ExtraBold.ttf": "/rameshver/static/media/Poppins-ExtraBold.4ed78cd5d64af4efc3c7.ttf",
-    "static/media/bg.jpg": "/rameshver/static/media/bg.6647a3359368db55be3a.jpg",
-    "static/media/logo.svg": "/rameshver/static/media/logo.fb971b325bff7203a1d027c28f83423c.svg",
-    "index.html": "/rameshver/index.html",
-    "static/media/x.svg": "/rameshver/static/media/x.cb990eee006cd2cd0ab29cc99c036cfd.svg",
-    "static/media/menu.svg": "/rameshver/static/media/menu.c21acb3a526b710b2a6d78e46cc72a80.svg",
-    "main.8e783725.css.map": "/rameshver/static/css/main.8e783725.css.map",
-    "main.f7be692d.js.map": "/rameshver/static/js/main.f7be692d.js.map"
+    "main.css": "/rameshver43/portfolio/static/css/main.d0bbb605.css",
+    "main.js": "/rameshver43/portfolio/static/js/main.f592d5a4.js",
+    "static/media/bg.jpg": "/rameshver43/portfolio/static/media/bg.cd853fdadc089249ce93.jpg",
+    "static/media/profilephoto.jpeg": "/rameshver43/portfolio/static/media/profilephoto.74779a20057b462a29fc.jpeg",
+    "static/media/Poppins-Thin.ttf": "/rameshver43/portfolio/static/media/Poppins-Thin.a61eaf4c2e4d44d6db6a.ttf",
+    "static/media/Poppins-Light.ttf": "/rameshver43/portfolio/static/media/Poppins-Light.f41b63c0bb0963ace821.ttf",
+    "static/media/Poppins-Regular.ttf": "/rameshver43/portfolio/static/media/Poppins-Regular.8081832fc5cfbf634aa6.ttf",
+    "static/media/Poppins-Medium.ttf": "/rameshver43/portfolio/static/media/Poppins-Medium.9e1bb626874ed49aa343.ttf",
+    "static/media/Poppins-SemiBold.ttf": "/rameshver43/portfolio/static/media/Poppins-SemiBold.cce5625b56ec678e4202.ttf",
+    "static/media/Poppins-Bold.ttf": "/rameshver43/portfolio/static/media/Poppins-Bold.404e299be26d78e66794.ttf",
+    "static/media/Poppins-ExtraBold.ttf": "/rameshver43/portfolio/static/media/Poppins-ExtraBold.4ed78cd5d64af4efc3c7.ttf",
+    "index.html": "/rameshver43/portfolio/index.html",
+    "main.d0bbb605.css.map": "/rameshver43/portfolio/static/css/main.d0bbb605.css.map",
+    "main.f592d5a4.js.map": "/rameshver43/portfolio/static/js/main.f592d5a4.js.map"
   },
   "entrypoints": [
-    "static/css/main.8e783725.css",
-    "static/js/main.f7be692d.js"
+    "static/css/main.d0bbb605.css",
+    "static/js/main.f592d5a4.js"
   ]
 }
