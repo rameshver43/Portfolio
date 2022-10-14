@@ -3,10 +3,6 @@
 	"version": "0.1.0",
 	"main": "server.js",
 	"private": true,
-	"engines": {
-		"npm": "8.19.1",
-		"node": "18.9.1"
-	},
 	"dependencies": {
 		"@emailjs/browser": "^3.4.0",
 		"@iconscout/react-unicons": "^1.1.6",
@@ -39,7 +35,6 @@
 		"web-vitals": "^2.1.0"
 	},
 	"scripts": {
-    "heroku-prebuild": "npm install --force",
 		"start": "node server.js",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
