@@ -1,0 +1,62 @@
+
+.tabHeading{
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: 600;
+    text-rendering: optimizeLegibility;
+    margin-bottom: 0!important;
+    text-rendering: optimizeLegibility;
+    display: block;
+    font-family: "Amazon Ember",Arial,sans-serif;
+    color: #0F1111;
+    padding: 5px;
+    background-color: green;
+    color: white;
+    width: 500px;
+}
+.tabbodyHeading{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    text-rendering: optimizeLegibility;
+    margin-bottom: 0!important;
+    text-rendering: optimizeLegibility;
+    display: block;
+    font-family: "Amazon Ember",Arial,sans-serif;
+    color: #0F1111;
+}
+.space{
+    margin-bottom: 15px;
+}
+.tabBody{
+    font-weight: 100;
+    font-size: 18px;
+    color: var(--gray);
+}
+.tab{
+    text-align: start;
+}
+.button{
+    text-align: start;
+}
+.experienceHeading{
+    text-align: left;
+    color: #232F3E;
+    margin-left: 10px;
+    font-family: AmazonEmberBold,Helvetica Neue Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 500;  
+    font-size: 2.2rem;
+    word-wrap: break-word;
+    margin-bottom: 5px;
+  }
+  
+.experience {
+    margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding: 1rem;
+  flex-grow: 1;
+  overflow: "hidden";
+  padding-bottom: 2rem;
+  }

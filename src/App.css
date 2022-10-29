@@ -52,3 +52,21 @@
   color: var(--orange);
 }
 
+.backtotop{
+  background-color: #37475A !important;
+  width: -webkit-fill-available !important;
+  border-radius: unset !important;
+}
+.backtotop:hover{
+  background-color: #232F3E !important;
+}
+.navFooterBackToTopText{
+  color: #FFF;
+  display: block;
+    text-align: center;
+    padding: 10px 0;
+    line-height: 19px;
+    font-size: 13px;
+    font-family: inherit;
+    white-space: normal;
+}

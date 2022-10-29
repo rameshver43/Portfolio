@@ -4,13 +4,17 @@ import FacebookIcon from "@material-ui/icons/Facebook";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import TwitterIcon from "@material-ui/icons/Twitter";
+import Typography from "@material-ui/core/Typography";
 export default function Footer() {
 	return (
 		<div className="box">
 			<div className="container">
 				<div className="row">
 					<div className="footercolumn">
-						<div className="footerheading">Coding Profile</div>
+						<Typography variant="h5" className="footerheading">
+							Coding Profile
+						</Typography>
+						<br />
 						<ul className="footerul">
 							<li className="footerlist">
 								<a
@@ -21,7 +25,7 @@ export default function Footer() {
 									Codechef
 								</a>
 							</li>
-							
+
 							<li className="footerlist">
 								<a
 									className="footerlink"
@@ -31,12 +35,14 @@ export default function Footer() {
 									HackerRank
 								</a>
 							</li>
-						
 						</ul>
 					</div>
 					<div className="footerspace"></div>
 					<div className="footercolumn">
-						<div className="footerheading">Coding Platform</div>
+						<Typography variant="h5" className="footerheading">
+							Coding Platform
+						</Typography>
+						<br />
 						<ul className="footerul">
 							<li className="footerlist">
 								<a
@@ -78,7 +84,10 @@ export default function Footer() {
 					</div>
 					<div className="footerspace"></div>
 					<div className="footercolumn">
-						<div className="footerheading">Social Media</div>
+						<Typography variant="h5" className="footerheading">
+							Social Media
+						</Typography>
+						<br />
 						<ul className="footerul">
 							<li className="footerlist">
 								<a

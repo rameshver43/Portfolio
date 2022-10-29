@@ -1,10 +1,12 @@
 import React, { useState } from "react";
-import Button from "react-bootstrap/Button";
+import Button from '@material-ui/core/Button';
 import Form from "react-bootstrap/Form";
 import Paper from "@material-ui/core/Paper";
 import "./Contact.css";
 import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
+import Input from "@material-ui/core/Input";
+import TextField from "@material-ui/core/TextField";
 
 const ContactForm = () => {
 	const [status, setStatus] = useState("Submit");
@@ -42,11 +44,17 @@ const ContactForm = () => {
 						<Form onSubmit={handleSubmit}>
 							<Form.Group className="mb-3" controlId="formBasicEmail">
 								<Form.Label>Name</Form.Label>
-								<Form.Control type="name" id="name" placeholder="Enter email" />
+								<Input
+									className="form-control"
+									type="name"
+									id="name"
+									placeholder="Enter Name"
+								/>
 							</Form.Group>
 							<Form.Group className="mb-3" controlId="formBasicEmail">
 								<Form.Label>Email address</Form.Label>
-								<Form.Control
+								<Input
+									className="form-control"
 									type="email"
 									id="email"
 									placeholder="Enter email"
@@ -57,13 +65,14 @@ const ContactForm = () => {
 							</Form.Group>
 							<Form.Group className="mb-3">
 								<Form.Label>Message</Form.Label>
-								<textarea
+								<TextField
 									className="form-control"
-									id="message"
-									required
-									rows="3"></textarea>
+									id="standard-multiline-static"
+									multiline
+									variant="outlined"
+								/>
 							</Form.Group>
-							<Button variant="primary" type="submit">
+							<Button variant="contained" color="primary" onClick={handleSubmit}>
 								{status}
 							</Button>
 						</Form>

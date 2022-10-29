@@ -108,7 +108,7 @@ export default function OutlinedCard() {
 					{Achievements.map((item, index) => (
 						<div key={index}>
 							<Typography component={"span"} className="tabBody">
-								{item}
+							• {item}
 							</Typography>
 						</div>
 					))}
@@ -122,7 +122,7 @@ export default function OutlinedCard() {
 					{Extracurricular.map((item, index) => (
 						<div key={index}>
 							<Typography component={"span"} className="tabBody">
-								{item}
+							• {item}
 							</Typography>
 						</div>
 					))}
