@@ -56,6 +56,8 @@
   background-color: #37475A !important;
   width: -webkit-fill-available !important;
   border-radius: unset !important;
+  border: none !important;
+  justify-content:  center !important;
 }
 
 .navFooterBackToTopText{
@@ -64,21 +66,10 @@
     text-align: center;
     padding: 10px 0;
     line-height: 19px;
-    font-size: 13px;
+    font-size: 18px;
     font-family: inherit;
     white-space: normal;
 }
 .navFooterBackToTopText:hover{
   color:orangered;
-}
-.contactusbtn{
-  position: fixed !important;
-    bottom: 40px;
-    right: 40px;
-    background-color: #0C9 !important;
-    color: #FFF;
-    border-radius: 50px;
-    text-align: center;
-    box-shadow: 2px 2px 3px #999 !important;
-    z-index: 3000 !important;
 }

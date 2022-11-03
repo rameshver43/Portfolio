@@ -17,12 +17,12 @@ function App() {
 			<About />
 			<Experience />
 			<Projects />
-			<Button className="backtotop" variant="contained" color="primary">
+			<button className="backtotop" variant="contained" color="primary">
 				<Link to="Navbar" spy={true} smooth={true} offset={0} duration={0}>
 					<span className="navFooterBackToTopText"> Back to top </span>
 				</Link>
-			</Button>
-			<LaptopModel/>
+			</button>
+			<LaptopModel />
 			<Footer />
 		</div>
 	);
