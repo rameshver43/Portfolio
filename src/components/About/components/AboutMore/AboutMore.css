@@ -20,11 +20,12 @@
     word-wrap: break-word;
     background-color: green !important;
     color: white !important;
-    width: 500px !important;
+    width: 200px !important;
     padding-left: 15px;
 }
 .MuiButtonBase-root{
     align-items: flex-start !important;
+    justify-content: unset !important;
 }
 .MuiAccordionSummary-root.Mui-expanded {
     min-height: 0px !important;

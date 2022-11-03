@@ -58,13 +58,15 @@ export default function LaptopModel() {
 
 	return (
 		<div>
-			<Button
-				className="contactusbtn"
-				variant="contained"
-				color="primary"
-				onClick={handleClickOpen}>
-				Contact Us
-			</Button>
+			{!open && (
+				<Button
+					className="contactusbtn"
+					variant="contained"
+					color="primary"
+					onClick={handleClickOpen}>
+					Contact Us
+				</Button>
+			)}
 			<Dialog
 				onClose={handleClose}
 				aria-labelledby="customized-dialog-title"
