@@ -57,9 +57,7 @@
   width: -webkit-fill-available !important;
   border-radius: unset !important;
 }
-.backtotop:hover{
-  background-color: #232F3E !important;
-}
+
 .navFooterBackToTopText{
   color: #FFF;
   display: block;
@@ -69,4 +67,18 @@
     font-size: 13px;
     font-family: inherit;
     white-space: normal;
+}
+.navFooterBackToTopText:hover{
+  color:orangered;
+}
+.contactusbtn{
+  position: fixed !important;
+    bottom: 40px;
+    right: 40px;
+    background-color: #0C9 !important;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999 !important;
+    z-index: 3000 !important;
 }

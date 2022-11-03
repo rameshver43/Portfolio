@@ -134,23 +134,8 @@ export default function Header() {
 							offset={0}
 							onClick={hideDrawer}
 							duration={0}>
-              
 							<Typography component={"span"} className="option">
 								EXPERIENCE
-							</Typography>
-						</Link>
-					</li>
-					<li className="home_name1">
-						<Link
-							activeClass="active"
-							onClick={hideDrawer}
-							to="contact"
-							spy={true}
-							smooth={true}
-							offset={0}
-							duration={0}>
-							<Typography component={"span"} className="option">
-								CONTACT US
 							</Typography>
 						</Link>
 					</li>
@@ -212,16 +197,6 @@ export default function Header() {
 								duration={0}>
 								<Typography component={"span"} className="option">
 									EXPERIENCE
-								</Typography>
-							</Link>
-							<Link
-								to="contact"
-								spy={true}
-								smooth={true}
-								offset={0}
-								duration={0}>
-								<Typography component={"span"} className="option">
-									CONTACT US
 								</Typography>
 							</Link>
 						</div>

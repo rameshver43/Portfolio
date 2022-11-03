@@ -1,7 +1,7 @@
 import React from "react";
 import "./About.css";
 import Paper from "@material-ui/core/Paper";
-import AboutMe from "./components/AboutMe/AboutMe";
+import AboutMore from "./components/AboutMore/AboutMore";
 const Intro = () => {
 	return (
 		<Paper className="about" id="about">
@@ -20,7 +20,7 @@ const Intro = () => {
 					website as fullstack developer. I am looking forward to hear from you
 					any suggestion or any guidence.
 				</div>
-					<AboutMe />
+				<AboutMore />
 			</div>
 			<div className="i-right"></div>
 		</Paper>

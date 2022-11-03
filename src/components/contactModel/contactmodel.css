@@ -1,0 +1,20 @@
+.contactusbtn{
+    position: fixed !important;
+      bottom: 40px;
+      right: 40px;
+      background-color: #0C9 !important;
+      color: #FFF;
+      border-radius: 50px;
+      text-align: center;
+      box-shadow: 2px 2px 3px #999 !important;
+      z-index: 3000 !important;
+  }
+
+  .content{
+    background-color: #EEEDE7;
+  }
+
+  .modelnavbarstyle{
+    background-color: none;
+    background-color: darkmagenta !important;
+  }

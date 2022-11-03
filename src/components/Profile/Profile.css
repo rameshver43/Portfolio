@@ -78,7 +78,7 @@
 }
 .colz .colz-icon svg {
  margin-left: 20px;
- color:white;
+ color:white; 
 }
 .colz .colz-icon svg:hover {
   transform: scale(1.5);
