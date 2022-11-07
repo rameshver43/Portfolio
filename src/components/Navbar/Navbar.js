@@ -13,10 +13,6 @@ const useStyles = makeStyles((theme) => ({
 		width: 200,
 	},
 
-	appbar: {
-		backgroundColor: "black",
-		height: 60,
-	},
 	sectionDesktop: {
 		display: "none",
 		[theme.breakpoints.up("md")]: {
@@ -162,8 +158,8 @@ export default function Header() {
 	);
 
 	return (
-		<div className="header" id="Navbar">
-			<AppBar className={classes.appbar}>
+		<div id="Navbar">
+			<AppBar className="appbar">
 				<Toolbar>
 					<div className={classes.leftoption}>
 						<Link to="Navbar" spy={true} smooth={true} offset={0} duration={0}>

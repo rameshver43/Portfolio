@@ -11,10 +11,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-image: url("../../assets/Home/bg.jpg");
   padding-bottom: 10px;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #37475A !important;
 }
 .profile-parent {
   display: flex;

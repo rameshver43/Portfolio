@@ -48,7 +48,7 @@
 }
 
 .header_option:hover {
-    color: orangered;
+    color: yellow;
 }
 
 .header_optionLineOne {
@@ -75,20 +75,20 @@
     cursor: pointer;
 }
 .option:hover{
-    color:orange;
+    color:yellow;
 }
 .menu{
     cursor: pointer;
 }
 .menu:hover{
-    color: orangered;
+    color: yellow;
 }
 .option1{
     cursor: pointer;
     color: white;
 }
 .option1:hover{
-    color:orange;
+    color:yellow;
 }
 .list{
     list-style: none;
@@ -118,8 +118,22 @@
     all: unset;
 }
 .appbar {
-    all:unset;
-    background-color: red;
+    position: fixed;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex: auto;
+    -ms-flex: auto;
+    flex: auto;
+    will-change: transform;
+    width: 100%;
+    height: 56px;
+    background-color: #2874f0;
+    color: #f0f0f0;
+    z-index: 10;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
   }
 .header_basketCount {
     margin-left: 10px;

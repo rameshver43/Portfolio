@@ -5,6 +5,7 @@ import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 import Paper from "@material-ui/core/Paper";
 import "./Experience.css";
+import Box from "@material-ui/core/Box";
 
 const useStyles = makeStyles({
 	root: {
@@ -47,28 +48,27 @@ export default function Experience() {
 	const classes = useStyles();
 
 	return (
-		<Paper className="experience" id="experience">
+		<Box className="experience" id="experience">
 			<div className="experienceHeading">Experience</div>
-			{Experiences.map((item, index) => 
-            (
-                <>
-				<Card  key={index} className={classes.root} variant="outlined">
-					<Typography className="tabHeading" component={"span"}>
-						{item.companyName}
-					</Typography>
-					<CardContent>
-						{item.details.map((value, index) => (
-							<div key={index}>
-								<Typography component={"span"} className="tabBody">
-									• {value}
-								</Typography>
-							</div>
-						))}
-					</CardContent>
-				</Card>
-                <br/>
-                </>
+			{Experiences.map((item, index) => (
+				<>
+					<Card key={index} className={classes.root} variant="outlined">
+						<Typography className="tabHeading" component={"span"}>
+							{item.companyName}
+						</Typography>
+						<CardContent>
+							{item.details.map((value, index) => (
+								<div key={index}>
+									<Typography component={"span"} className="tabBody">
+										• {value}
+									</Typography>
+								</div>
+							))}
+						</CardContent>
+					</Card>
+					<br />
+				</>
 			))}
-		</Paper>
+		</Box>
 	);
 }

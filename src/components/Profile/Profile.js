@@ -74,13 +74,6 @@ export default function Profile() {
 						</span>
 					</div>
 					<div className="profile-options">
-						<Link to="contact" spy={true} smooth={true} offset={0} duration={0}>
-							<button className="btn primary-btn">
-								{""}
-								Hire Me{" "}
-							</button>
-						</Link>
-
 						<a href="Rameshver_Resume.pdf" download="Rameshver.pdf">
 							<button className="btn highlighted-btn">Get Resume</button>
 						</a>

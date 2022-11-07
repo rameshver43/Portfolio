@@ -10,18 +10,11 @@
 }
 
 .projects {
-    background-color: rgb(255, 255, 255);
-    color: rgb(38, 38, 38);
-    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-    overflow: hidden;
-    border: 1px solid rgb(230, 235, 241);
-    border-radius: 8px;
-    box-shadow: inherit;
-    padding: 1rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
+    padding: 1rem;
     flex-grow: 1;
     overflow: "hidden";
     padding-bottom: 2rem;

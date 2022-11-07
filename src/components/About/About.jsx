@@ -2,9 +2,10 @@ import React from "react";
 import "./About.css";
 import Paper from "@material-ui/core/Paper";
 import AboutMore from "./components/AboutMore/AboutMore";
+import Box from "@material-ui/core/Box";
 const Intro = () => {
 	return (
-		<Paper className="about" id="about">
+		<Box className="about" id="about">
 			<div className="aboutheading">About</div>
 			<div className="i-left">
 				<div className="i-name">
@@ -23,7 +24,7 @@ const Intro = () => {
 				<AboutMore />
 			</div>
 			<div className="i-right"></div>
-		</Paper>
+		</Box>
 	);
 };
 

@@ -8,6 +8,7 @@ import Experience from "./components/Experience/Experience";
 import Button from "@material-ui/core/Button";
 import { Link } from "react-scroll";
 import LaptopModel from "./components/contactModel/contactlaptop";
+import Grid from "@material-ui/core/Grid";
 
 function App() {
 	return (
