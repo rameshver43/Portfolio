@@ -135,6 +135,19 @@ export default function Header() {
 							</Typography>
 						</Link>
 					</li>
+					<li className="home_name1">
+						<Link
+							to="login"
+							spy={true}
+							smooth={true}
+							offset={0}
+							onClick={hideDrawer}
+							duration={0}>
+							<Typography component={"span"} className="option">
+								Login
+							</Typography>
+						</Link>
+					</li>
 				</ul>
 			</div>
 		</div>

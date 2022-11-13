@@ -73,3 +73,16 @@
   margin: 0;
   padding: 0;
 }
+
+footer {
+  margin-top: 50px;
+}
+
+p.copyright {
+  position: absolute;
+  width: 100%;
+  color: #fff;
+  line-height: 40px;
+  font-size: 1em;
+  text-align: center;
+}

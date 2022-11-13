@@ -130,6 +130,9 @@ export default function Footer() {
 					</div>
 				</div>
 			</div>
+			<footer>
+				<p className="copyright">© 2022 rameshver.onrender.com</p>
+			</footer>
 		</div>
 	);
 }

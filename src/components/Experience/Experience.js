@@ -51,8 +51,8 @@ export default function Experience() {
 		<Box className="experience" id="experience">
 			<div className="experienceHeading">Experience</div>
 			{Experiences.map((item, index) => (
-				<>
-					<Card key={index} className={classes.root} variant="outlined">
+				<div key={index}>
+					<Card className={classes.root} variant="outlined">
 						<Typography className="tabHeading" component={"span"}>
 							{item.companyName}
 						</Typography>
@@ -67,7 +67,7 @@ export default function Experience() {
 						</CardContent>
 					</Card>
 					<br />
-				</>
+				</div>
 			))}
 		</Box>
 	);

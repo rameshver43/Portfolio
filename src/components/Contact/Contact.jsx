@@ -34,10 +34,13 @@ const ContactForm = () => {
 			<Grid container>
 				<Box
 					boxShadow={3}
-					bgcolor="background.paper"
 					m={1}
 					p={1}
-					style={{ width: "30rem", padding: "10px" }}>
+					style={{
+						width: "30rem",
+						padding: "10px",
+						backgroundColor: "#EEEDE7",
+					}}>
 					<Form onSubmit={handleSubmit}>
 						<Form.Group className="mb-3" controlId="formBasicEmail">
 							<Form.Label>Name</Form.Label>
