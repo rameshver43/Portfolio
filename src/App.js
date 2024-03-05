@@ -11,22 +11,22 @@ import LaptopModel from "./components/contactModel/contactlaptop";
 import Grid from "@material-ui/core/Grid";
 
 function App() {
-	return (
-		<div className="App">
-			<Navbar />
-			<Profile />
-			<About />
-			<Experience />
-			<Projects />
-			<button className="backtotop" variant="contained" color="primary">
-				<Link to="Navbar" spy={true} smooth={true} offset={0} duration={0}>
-					<span className="navFooterBackToTopText"> Back to top </span>
-				</Link>
-			</button>
-			<LaptopModel />
-			<Footer />
-		</div>
-	);
+  return (
+    <div className="App">
+      <Navbar />
+      <Profile />
+      <About />
+      <Experience />
+      <Projects />
+      <button className="backtotop" variant="contained" color="primary">
+        <Link to="Navbar" spy={true} smooth={true} offset={0} duration={0}>
+          <span className="navFooterBackToTopText"> Back to top </span>
+        </Link>
+      </button>
+      {false && <LaptopModel />}
+      <Footer />
+    </div>
+  );
 }
 
 export default App;
